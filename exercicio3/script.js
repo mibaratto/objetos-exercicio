@@ -5,7 +5,7 @@ const pokemon1 = {
 };
 
 //A Cópia
-pokemon1Copia = {
+const pokemon1Copia = {
     ...pokemon1,
     nome: "Squirtle",
     tipo: "Água"
@@ -22,6 +22,7 @@ const ataque = {
     tipo: "Normal",
     precisao: 100
 }
+
 pokemon1.ataques.push(ataque)
 
 
@@ -30,21 +31,24 @@ const ataque2 = {
     ...ataque,
     nome: "Folha Navalha",
     dano: 45,
-    tipo: "Grama",
-    precisao: 100
+    tipo: "Grama"
 }
+
 pokemon1.ataques.push(ataque2)
+
 
 //E 
 pokemon1Copia.ataques = []
+
 const ataque3 = {
     ...ataque,
     nome: "Jato de Água",
-    dano: 40,
-    tipo: "Água",
-    precisao: 100
+    tipo: "Água"
 }
+
 pokemon1Copia.ataques.push(ataque3)
 
-console.table(pokemon1)
-console.table(pokemon1Copia)
+//console.log("Pokemon 1:", pokemon1)
+//console.log("Pokemon copia:", pokemon1Copia)
+
+console.log(pokemon1Copia.ataques)
